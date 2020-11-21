@@ -40,9 +40,8 @@ public:
                  cout<<arr[index]<<" ";}
             cout<<"]|"<<winner<<"\t|"<<count<<endl;
             arr[0] = winner;
-            temp = arr[1];
             arr.erase(arr.begin() + 1);
-            arr.push_back(temp);
+            arr.push_back(loser);
             current = winner;
        }
     }
